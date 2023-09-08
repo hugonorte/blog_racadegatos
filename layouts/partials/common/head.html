@@ -1,0 +1,7 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raça de gatos - Home page</title>
+    {{ $mycss := resources.Get "css/bundle.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $mycss.RelPermalink }}" integrity="{{ $mycss.Data.Integrity }}">
+</head>
