@@ -1,7 +1,7 @@
 spec:
   name: racadegatos
   static_sites:
-  - build_command: rm -r ./public; hugo --destination ./public
+  - build_command: rm -r ./public; hugo --destination ./workspace/public
     environment_slug: hugo
     git:
       branch: master
