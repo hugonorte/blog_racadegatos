@@ -1,4 +1,4 @@
 <figure>
-    <img src="{{ .Get `url` }}" alt="{{ .Get `alt` }}">
-    <figcaption>{{ .Get "caption" }}</figcaption>
+    <img src="{{.Site.BaseURL}}images/{{ .Get 0 }}" alt="{{ .Get 1 }}">
+    <figcaption>{{ .Get 1 }}</figcaption>
 </figure>
