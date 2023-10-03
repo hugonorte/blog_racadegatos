@@ -1,6 +1,6 @@
 relativeURLs = true
-baseURL = "/"
-title = "Racadegatos"
+baseURL = "https://racadegatos.com"
+title = "Raca de gatos"
 author = "Hugo Norte"
 copyright = "Copyright © 2023, Hugo Norte and the Hugo Authors; all rights reserved."
 paginate = 3
