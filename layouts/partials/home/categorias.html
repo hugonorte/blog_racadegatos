@@ -1,5 +1,12 @@
-<div class="row">
-    <div class="col">
-        Categorias
-    </div>
-</div>
+
+    {{ $categorias := slice }}
+    {{ range .Site.RegularPages }}
+      {{ with .Params.categories }}
+        {{ $categorias = union $categorias . }}
+      {{ end }}
+    {{ end }}
+    {{ range $categorias }}
+      <li><a href="{{ printf "/blog//%s" (urlize .) }}/">{{ . }}</a></li>
+    {{ end }}
+ 
+  

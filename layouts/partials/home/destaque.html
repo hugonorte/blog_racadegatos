@@ -1,9 +1,45 @@
-<div class="row">
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-            <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-            <a class="btn btn-primary btn-lg" type="button" href="/blog">Example button</a>
-        </div>
+{{ $destaques := slice }}
+{{ range .Site.RegularPages }}
+  {{ $imagem := "" }}
+  {{ $alt := "" }}
+  {{ $title := "" }}
+  {{ $active := 0 }}
+
+  {{ with .Params.image }}
+    {{ $imagem = . }}
+  {{ end }} 
+  {{ with .Params.image_alt }}
+    {{ $alt = . }}
+  {{ end }}
+  {{ with .Params.carousel_active }}
+    {{ $active = . }}
+  {{ end }}
+  {{ with .Params.title }}
+    {{ $title = . }}
+  {{ end }}
+
+  {{ with .Params.image }}
+    {{ $destaques = $destaques | append (dict "image" $imagem "image_alt" $alt "carousel_active" $active "title" $title) }}
+  {{ end }}
+
+{{ end }}
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    {{ range $destaques }}
+    <div class='carousel-item carousel-position {{ if eq .carousel_active "1" }}active{{ end }}'>
+      <h2>{{ .title }}</h2>
+      <img src="http://localhost:1313/images/{{ .image }}" class="d-block w-100" alt="{{ .image_alt }}">
     </div>
+    {{ end }}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+

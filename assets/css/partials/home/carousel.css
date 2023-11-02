@@ -1,19 +1,4 @@
 @charset "UTF-8";
-:root {
-  --orange: #df6900;
-  --primary-light:#ffa719;
-  --primary-dark:#915a00;
-  --mustard:#ffd449;
-  --blue:#142c52;
-  --orange-c-um: #004d91;
-  --orange-c-dois:#0075de;
-  --medium-slate-blue: #715aff;
-  --risd-blue: #004fff;
-  --light-green: #8aea92;
-  --rose: #ff007f;
-}
-
-/* SCSS Gradient */
 .carousel-position {
   position: relative;
 }
@@ -26,8 +11,4 @@
   color: rgb(247, 243, 243); /* Cor do texto da legenda */
   padding: 0.5em; /* Espaçamento interno para a legenda */
   text-align: center; /* Alinhamento de texto ao centro */
-}
-
-body {
-  background-color: #ffffff;
-}/*# sourceMappingURL=bundle.css.map */
+}/*# sourceMappingURL=carousel.css.map */

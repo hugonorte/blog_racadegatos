@@ -1,0 +1,15 @@
+.carousel-position {
+    position: relative;
+
+    h2 {
+        position: absolute;
+        bottom: 1em; /* Margem dinâmica de 1em na parte inferior */
+        left: 0; /* Alinhamento à esquerda */
+        right: 0; /* Alinhamento à direita */
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo com transparência para legibilidade */
+        color: rgb(247, 243, 243); /* Cor do texto da legenda */
+        padding: 0.5em; /* Espaçamento interno para a legenda */
+        text-align: center; /* Alinhamento de texto ao centro */
+    }
+}
+
