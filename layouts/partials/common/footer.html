@@ -1,3 +1,43 @@
-<footer class="pt-3 mt-4 text-body-secondary border-top">
-    © 2023
+<footer class="pt-3 mt-4 text-body-secondary border-top" aria-role="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div>
+                    logo
+                </div>
+                <ul>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                </ul>
+                <hr />
+                <div>
+                    <!-- CATEGORIAS -->
+                   
+                    <section>
+                        <ul>
+                          {{ $categorias := slice }}
+                          {{ range .Site.RegularPages }}
+                            {{ with .Params.categories }}
+                              {{ $categorias = union $categorias . }}
+                            {{ end }}
+                          {{ end }}
+                          {{ range $categorias }}
+                            <li><a href="{{ printf "/blog//%s" (urlize .) }}/">{{ . }}</a></li>
+                          {{ end }}
+                        </ul>
+                      </section>  
+                    <!-- FIM CATEGORIAS -->
+                </div>
+                teste
+            </div>
+            <div class="col-6"></div>
+        </div>
+        <section id="copyright" aria-role="copyright">
+            <div class="row">
+                <div class="col text-center">
+                    Raça de Gatos© <span class="year"></span>
+                </div>
+            </div>
+        </section>
+    </div>
 </footer>

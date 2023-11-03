@@ -1,4 +1,5 @@
-
+<section>
+  <ul>
     {{ $categorias := slice }}
     {{ range .Site.RegularPages }}
       {{ with .Params.categories }}
@@ -8,5 +9,5 @@
     {{ range $categorias }}
       <li><a href="{{ printf "/blog//%s" (urlize .) }}/">{{ . }}</a></li>
     {{ end }}
- 
-  
+  </ul>
+</section>  

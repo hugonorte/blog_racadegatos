@@ -2,41 +2,30 @@
 <html lang="en">
   {{ partial "home/head.html" . }}
   <body>
+    {{ partial "common/nav.html" . }}
     <main>
-      <div class="container py-4">
-      {{ partial "common/nav.html" . }}
+      <!-- CARROUSSEL -->
       {{ partial "home/destaque.html" . }}
+      <!-- ANUNCIO 01 -->
       {{ partial "home/anuncio01.html" . }}
         <div class="row">
+      <!-- PRIMEIRA PARTE - MOBILE //// COLUNA 1 DESKTOP -->
           <div class="col-lg-9">
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="h-100 p-5 text-bg-dark rounded-3">
-                          <h2>Change the background</h2>
-                          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                          <button class="btn btn-outline-light" type="button">Example button2</button>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                          <h2>Add borders</h2>
-                          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                          <a class="btn btn-outline-secondary" type="button" href="/blog">Example button2</a>
-                      </div>
-                  </div>
-              </div>
+      <!-- POSTS RECENTES -->
+            {{ partial "home/recents.html" . }}
           </div>
+      <!-- SEGUNDA PARTE - MOBILE ////  COLUNA 2 DESKTOP -->
           <div class="col-lg-3">
+      <!-- REDES SOCIAIS -->
             {{ partial "home/social.html" . }}
-            <ul>
-              {{ partial "home/categorias.html" . }}
-            </ul>
+      <!-- CATEGORIAS -->
+            {{ partial "home/categorias.html" . }}
+      <!-- ANUNCIO 02 -->
             {{ partial "home/anuncio02.html" . }}
           </div>
         </div>
-      </div>
     </main>
-  {{ partial "common/footer.html" }}
-  {{ partial "home/scripts.html" . }}
+  {{ partial "common/footer.html" . }}
+  {{ partial "common/scripts.html" . }}
   </body>
 </html>
