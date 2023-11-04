@@ -1,0 +1,41 @@
+
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .logo {
+        max-width: 50vw;
+        height: auto;
+    }
+ }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .logo {
+        max-width: 44vw;
+        height: auto;
+    }
+ }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .logo {
+        max-width: 35vw;
+        height: auto;
+    }
+ }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+    .logo {
+        max-width: 25vw;
+        height: auto;
+    }
+ }
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { 
+    .logo {
+    max-width: 17vw;
+    height: auto;
+} 
+}

@@ -14,6 +14,36 @@
 }
 
 /* SCSS Gradient */
+@media (max-width: 575.98px) {
+  .logo {
+    max-width: 50vw;
+    height: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .logo {
+    max-width: 44vw;
+    height: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .logo {
+    max-width: 35vw;
+    height: auto;
+  }
+}
+@media (max-width: 1199.98px) {
+  .logo {
+    max-width: 25vw;
+    height: auto;
+  }
+}
+@media (max-width: 1399.98px) {
+  .logo {
+    max-width: 17vw;
+    height: auto;
+  }
+}
 .carousel-position {
   position: relative;
 }
@@ -26,6 +56,10 @@
   color: rgb(247, 243, 243); /* Cor do texto da legenda */
   padding: 0.5em; /* Espaçamento interno para a legenda */
   text-align: center; /* Alinhamento de texto ao centro */
+}
+
+.home-social {
+  width: 82.5px;
 }
 
 body {
