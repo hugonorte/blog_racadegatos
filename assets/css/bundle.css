@@ -62,6 +62,32 @@
   width: 82.5px;
 }
 
+.offcanvas .dropdown-menu a:link {
+  text-decoration: none;
+}
+.offcanvas .dropdown-menu a:hover {
+  text-decoration: underline;
+}
+.offcanvas .logo {
+  max-width: 80%;
+  height: auto;
+}
+
+/* LOGO FONT */
+/* font-family: 'Mouse Memoirs', sans-serif; */
+/* TITLES FONT */
+/* font-family: 'Londrina Solid', sans-serif; */
+/* PARAGRAPH TEXT FONT */
+/* font-family: 'REM', sans-serif; */
 body {
   background-color: #ffffff;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Londrina Solid", sans-serif !important;
+}
+body p {
+  font-family: "REM", sans-serif !important;
+}
+body small {
+  font-family: "Londrina Solid", sans-serif !important;
 }/*# sourceMappingURL=bundle.css.map */

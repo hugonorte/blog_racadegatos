@@ -1,0 +1,10 @@
+.offcanvas .dropdown-menu a:link {
+  text-decoration: none;
+}
+.offcanvas .dropdown-menu a:hover {
+  text-decoration: underline;
+}
+.offcanvas .logo {
+  max-width: 80%;
+  height: auto;
+}/*# sourceMappingURL=nav.css.map */

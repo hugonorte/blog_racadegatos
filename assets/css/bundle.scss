@@ -4,8 +4,23 @@
 @import "partials/home/social.scss";
 @import "partials/common/header.scss";
 @import "partials/common/footer.scss";
-
+@import "partials/common/nav.scss";
+/* LOGO FONT */
+/* font-family: 'Mouse Memoirs', sans-serif; */
+/* TITLES FONT */
+/* font-family: 'Londrina Solid', sans-serif; */
+/* PARAGRAPH TEXT FONT */
+/* font-family: 'REM', sans-serif; */
 body {
     background-color: #ffffff;
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Londrina Solid', sans-serif !important;
+    }
+    p{
+       font-family: 'REM', sans-serif !important;
+    }
+    small{
+        font-family: 'Londrina Solid', sans-serif !important;
+    }
 }
 
