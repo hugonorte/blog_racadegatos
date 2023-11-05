@@ -1,14 +1,23 @@
-.offcanvas {
-    .dropdown-menu{
-        a:link{
-            text-decoration: none;
+@media (max-width: 991px) { 
+    .offcanvas {
+        .dropdown-menu{
+            a:link{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
         }
-        a:hover{
-            text-decoration: underline;
+        
+        .logo{
+                max-width: 80%;
+                height: auto;
         }
     }
-    .logo{
-        max-width: 80%;
-        height: auto;
+}
+    
+@media (min-width: 992px) { 
+    .offcanvas{
+        display: none;
     }
 }
