@@ -1,5 +1,5 @@
 relativeURLs = true
-baseURL = "https://www.racadegatos.com/"
+baseURL = "/"
 title = "Raca de gatos"
 author = "Hugo Norte"
 copyright = "Copyright © 2023, Hugo Norte and the Hugo Authors; all rights reserved."

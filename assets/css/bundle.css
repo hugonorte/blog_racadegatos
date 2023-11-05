@@ -62,17 +62,23 @@
   width: 82.5px;
 }
 
-.offcanvas .dropdown-menu a:link {
-  text-decoration: none;
+@media (max-width: 991px) {
+  .offcanvas .dropdown-menu a:link {
+    text-decoration: none;
+  }
+  .offcanvas .dropdown-menu a:hover {
+    text-decoration: underline;
+  }
+  .offcanvas .logo {
+    max-width: 80%;
+    height: auto;
+  }
 }
-.offcanvas .dropdown-menu a:hover {
-  text-decoration: underline;
+@media (min-width: 992px) {
+  .offcanvas {
+    display: none;
+  }
 }
-.offcanvas .logo {
-  max-width: 80%;
-  height: auto;
-}
-
 /* LOGO FONT */
 /* font-family: 'Mouse Memoirs', sans-serif; */
 /* TITLES FONT */
