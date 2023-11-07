@@ -2,6 +2,7 @@
 @import "_home.scss";
 @import "partials/home/carousel.scss";
 @import "partials/home/social.scss";
+@import "partials/home/categorias.scss";
 @import "partials/common/header.scss";
 @import "partials/common/footer.scss";
 @import "partials/common/nav.scss";
@@ -21,6 +22,13 @@ body {
     }
     small{
         font-family: 'Londrina Solid', sans-serif !important;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
 

@@ -1,0 +1,51 @@
+@media (max-width: 991px) { 
+    footer {
+        .logo{
+                max-width: 80%;
+                height: auto;
+        }
+    }
+    
+}
+
+footer{
+    .dropdown-menu{
+        a:link{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+    li {
+        color: #FFFFFF;
+        list-style: none;
+        text-transform: capitalize;
+        font-family: 'REM', sans-serif; 
+        font-size: 1.2rem;
+
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: darkkhaki;
+        }   
+    }
+    h4 {
+        font-family: 'Londrina Solid', sans-serif;
+        color: beige;
+    }
+}
+
+#copyright {
+    color: #FFFFFF;
+    font-family: 'REM', sans-serif; 
+    border-top-color:#575757;
+    border-top-width:1px;
+    border-top-style:solid;
+}
+
+
+

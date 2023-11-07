@@ -1,0 +1,12 @@
+#categorias {
+  font-family: "REM", sans-serif;
+  text-transform: capitalize;
+}
+#categorias a {
+  color: #333333;
+}
+#categorias li {
+  list-style: none;
+  line-height: 2rem;
+  height: 2rem;
+}/*# sourceMappingURL=categorias.css.map */

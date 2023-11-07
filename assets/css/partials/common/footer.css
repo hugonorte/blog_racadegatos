@@ -1,1 +1,39 @@
-/*# sourceMappingURL=footer.css.map */
+@media (max-width: 991px) {
+  footer .logo {
+    max-width: 80%;
+    height: auto;
+  }
+}
+footer .dropdown-menu a:link {
+  text-decoration: none;
+}
+footer .dropdown-menu a:hover {
+  text-decoration: underline;
+}
+footer li {
+  color: #FFFFFF;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: "REM", sans-serif;
+  font-size: 1.2rem;
+}
+footer li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer li a:hover {
+  text-decoration: underline;
+  color: darkkhaki;
+}
+footer h4 {
+  font-family: "Londrina Solid", sans-serif;
+  color: beige;
+}
+
+#copyright {
+  color: #FFFFFF;
+  font-family: "REM", sans-serif;
+  border-top-color: #575757;
+  border-top-width: 1px;
+  border-top-style: solid;
+}/*# sourceMappingURL=footer.css.map */
