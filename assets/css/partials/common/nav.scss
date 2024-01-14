@@ -8,8 +8,7 @@
                 text-decoration: underline;
             }
         }
-        
-        .logo{
+                .logo{
                 max-width: 80%;
                 height: auto;
         }
@@ -24,4 +23,22 @@
 
 nav {
     background-color: rgb(221, 151, 0);
+}
+
+.desktop-menu {
+    background-color: #FFd781;
+    a{
+        color: black;
+        padding-left: 1rem;
+
+    }
+    a:hover{
+        color: rgb(221,151,0);
+    }
+    li:hover{
+        background-color: black;
+        a{
+            color: #FFFFFF;
+        }
+    }
 }

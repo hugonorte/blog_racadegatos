@@ -44,6 +44,84 @@
     height: auto;
   }
 }
+#content h1 {
+  color: rgb(85, 20, 0);
+}
+#content h1, #content address {
+  margin: 3rem 1rem;
+}
+#content address {
+  text-justify: auto;
+  font-style: italic;
+}
+#content h2 {
+  color: #882000;
+  margin-top: 3rem;
+}
+#content h3 {
+  color: #a22600;
+  margin-top: 3rem;
+}
+#content h4 {
+  color: #b12a00;
+  margin-top: 3rem;
+}
+#content h4 a {
+  color: #666666;
+}
+#content h4 a:link {
+  color: #666666;
+}
+#content figcaption {
+  font-size: larger;
+  color: #4b4642;
+}
+#content li {
+  list-style: inside;
+  list-style-image: url("../images/logo/bullet.svg");
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+#content li a {
+  color: #333333;
+}
+#content li a:link {
+  color: #333333;
+}
+#content p {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 575.98px) {
+  #content, img {
+    max-width: 90vw;
+    margin: auto;
+  }
+}
+@media (min-width: 576px) {
+  #content, img {
+    max-width: 80vw;
+    margin: auto;
+  }
+}
+@media (min-width: 991.98px) {
+  #content, img {
+    max-width: 70vw;
+    margin: auto;
+  }
+}
+@media (min-width: 1199.98px) {
+  #content, img {
+    max-width: 60vw;
+    margin: auto;
+  }
+}
+@media (min-width: 1399.98px) {
+  #content, img {
+    max-width: 50vw;
+    margin: auto;
+  }
+}
 .carousel-position {
   position: relative;
 }
@@ -73,6 +151,30 @@
   list-style: none;
   line-height: 2rem;
   height: 2rem;
+}
+
+.label-categoria {
+  text-transform: capitalize;
+}
+
+.clip-rounded {
+  width: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a small {
+  color: rgb(112, 112, 112) !important;
+}
+a p {
+  color: rgb(102, 102, 102) !important;
+}
+a h5 {
+  color: rgb(218, 99, 19) !important;
 }
 
 @media (max-width: 991px) {
@@ -136,6 +238,23 @@ nav {
   background-color: rgb(221, 151, 0);
 }
 
+.desktop-menu {
+  background-color: #FFd781;
+}
+.desktop-menu a {
+  color: black;
+  padding-left: 1rem;
+}
+.desktop-menu a:hover {
+  color: rgb(221, 151, 0);
+}
+.desktop-menu li:hover {
+  background-color: black;
+}
+.desktop-menu li:hover a {
+  color: #FFFFFF;
+}
+
 /* LOGO FONT */
 /* font-family: 'Mouse Memoirs', sans-serif; */
 /* TITLES FONT */
@@ -143,7 +262,7 @@ nav {
 /* PARAGRAPH TEXT FONT */
 /* font-family: 'REM', sans-serif; */
 body {
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Londrina Solid", sans-serif !important;

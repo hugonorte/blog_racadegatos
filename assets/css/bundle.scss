@@ -1,8 +1,10 @@
 @import "_cores.scss";
 @import "_home.scss";
+@import "_single.scss";
 @import "partials/home/carousel.scss";
 @import "partials/home/social.scss";
 @import "partials/home/categorias.scss";
+@import "partials/home/recents.scss";
 @import "partials/common/header.scss";
 @import "partials/common/footer.scss";
 @import "partials/common/nav.scss";
@@ -13,7 +15,7 @@
 /* PARAGRAPH TEXT FONT */
 /* font-family: 'REM', sans-serif; */
 body {
-    background-color: #ffffff;
+    background-color: #eeeeee;
     h1,h2,h3,h4,h5,h6{
         font-family: 'Londrina Solid', sans-serif !important;
     }

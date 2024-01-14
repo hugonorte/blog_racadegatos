@@ -1,0 +1,23 @@
+.label-categoria {
+  text-transform: capitalize;
+}
+
+.clip-rounded {
+  width: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a small {
+  color: rgb(112, 112, 112) !important;
+}
+a p {
+  color: rgb(102, 102, 102) !important;
+}
+a h5 {
+  color: rgb(218, 99, 19) !important;
+}/*# sourceMappingURL=recents.css.map */

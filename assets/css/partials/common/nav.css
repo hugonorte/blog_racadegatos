@@ -17,4 +17,21 @@
 }
 nav {
   background-color: rgb(221, 151, 0);
+}
+
+.desktop-menu {
+  background-color: #FFd781;
+}
+.desktop-menu a {
+  color: black;
+  padding-left: 1rem;
+}
+.desktop-menu a:hover {
+  color: rgb(221, 151, 0);
+}
+.desktop-menu li:hover {
+  background-color: black;
+}
+.desktop-menu li:hover a {
+  color: #FFFFFF;
 }/*# sourceMappingURL=nav.css.map */

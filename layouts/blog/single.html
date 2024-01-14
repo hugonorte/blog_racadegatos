@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{.Description}}">
-    {{ with .Params.tags }}
-        {{ $tagString := slice }}
-        {{ range . }}
-            {{ $tagString = $tagString | append . }}
-        {{ end }}
-    <meta name="keywords" content="{{ delimit $tagString ", " }}">
-    {{ end }}
-    <title>{{ .Title }}</title>
-</head>
-<body>
-    <h1>{{.Title}}</h1>
-    <address>{{ .Params.author }}</address>
-    {{ .Content }}
+    {{ partial "home/head.html" . }}
+<body style="margin:auto">
+    {{ partial "common/nav.html" . }}
+    
+    <Section id="content">
+        <h1>{{.Title}}</h1>
+        <address>{{ .Params.author }}</address>
+        {{ .Content }}
+    </Section>
+    {{ partial "common/footer.html" . }}
+    {{ partial "common/scripts.html" . }}
 </body>
 </html>
