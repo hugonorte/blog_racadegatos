@@ -4,6 +4,9 @@
   {{ $alt := "" }}
   {{ $title := "" }}
   {{ $active := 0 }}
+  {{ $categories := "" }}
+  {{ $slug_categories := "" }}
+  {{ $slug := "" }}
 
   {{ with .Params.image }}
     {{ $imagem = . }}
@@ -17,9 +20,18 @@
   {{ with .Params.title }}
     {{ $title = . }}
   {{ end }}
+  {{ with .Params.categories }}
+    {{ $categories = . }}
+  {{ end }}
+  {{ with .Params.slug_categories }}
+    {{ $slug_categories = . }}
+  {{ end }}
+  {{ with .Params.slug }}
+    {{ $slug = . }}
+  {{ end }}
 
   {{ with .Params.image }}
-    {{ $destaques = $destaques | append (dict "image" $imagem "image_alt" $alt "carousel_active" $active "title" $title) }}
+    {{ $destaques = $destaques | append (dict "image" $imagem "image_alt" $alt "carousel_active" $active "title" $title "categories" $categories "slug_categories" $slug_categories "slug" $slug) }}
   {{ end }}
 
 {{ end }}
@@ -30,7 +42,13 @@
         <div class="carousel-inner">
           {{ range $destaques }}
           <div class='carousel-item carousel-position {{ if eq .carousel_active "1" }}active{{ end }}'>
-            <h2>{{ .title }}</h2>
+            <!-- <a href="{{ .RelPermalink }}">
+              <h2>{{ .title }}</h2>
+            </a> -->
+            <a href="{{ printf "/blog/%s/%s" (index .slug_categories 0) .slug }}/">
+              <h2>{{ .title }}</h2>
+            </a>
+
             <img src="/images/{{ .image }}" class="d-block w-100" alt="{{ .image_alt }}">
           </div>
           {{ end }}
