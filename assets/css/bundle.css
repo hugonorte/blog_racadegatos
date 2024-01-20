@@ -122,6 +122,17 @@
     margin: auto;
   }
 }
+#list_artigos h5 {
+  font-size: 1.5rem;
+}
+#list_artigos .card-text {
+  font-size: 1.2rem;
+}
+#list_artigos a .label-categoria {
+  font-size: 1.2rem;
+  color: #CCC !important;
+}
+
 .carousel-position {
   position: relative;
 }
@@ -263,6 +274,11 @@ nav {
 /* font-family: 'REM', sans-serif; */
 body {
   background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  height: 100vw;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Londrina Solid", sans-serif !important;

@@ -1,6 +1,7 @@
 @import "_cores.scss";
 @import "_home.scss";
 @import "_single.scss";
+@import "_list.scss";
 @import "partials/home/carousel.scss";
 @import "partials/home/social.scss";
 @import "partials/home/categorias.scss";
@@ -16,6 +17,13 @@
 /* font-family: 'REM', sans-serif; */
 body {
     background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    height: 100vw;
+
+
     h1,h2,h3,h4,h5,h6{
         font-family: 'Londrina Solid', sans-serif !important;
     }

@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista</title>
-</head>
+    {{ partial "home/head.html" . }}
 <body>
-    <h2>Artigos bbb</h2>
-    <ul>
-        {{ range .Pages }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
-        {{end}}
-    </ul>
+    {{ partial "common/nav.html" . }}
+    <section id="content">
+        <h2>{{ .Params.category_title }}</h2>
+        {{ partial "list/artigos.html" . }}
+    </section>
+    {{ partial "common/footer.html" . }}
+    {{ partial "common/scripts.html" . }}
 </body>
 </html>
