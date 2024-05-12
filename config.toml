@@ -1,9 +1,9 @@
 relativeURLs = true
 baseURL = "/"
-title = "Raca de gatos"
+title = "Raça de Gatos"
 author = "Hugo Norte"
 copyright = "Copyright © 2024, Hugo Norte and the Hugo Authors; all rights reserved."
 paginate = 3
 languageCode = "en"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "pt-BR"
 enableInlineShortcodes = true
