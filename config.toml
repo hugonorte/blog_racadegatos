@@ -5,5 +5,5 @@ author = "Hugo Norte"
 copyright = "Copyright © 2024, Hugo Norte and the Hugo Authors; all rights reserved."
 paginate = 3
 languageCode = "en"
-DefaultContentLanguage = "pt-BR"
+DefaultContentLanguage = "pt-br"
 enableInlineShortcodes = true
